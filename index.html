@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <style id="keyframes">
+      @keyframes teamScroll {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+
+        100% {
+          -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+        }
+      }
+    </style>
+    <title>Charchu</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="overlay-video-wrap">
+        <video src="videos/lala.mp4" loop="false" controls></video>
+      </div>
+    </div>
+    <header class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video
+          src="videos/lalaShort.mp4"
+          autoplay="true"
+          loop="true"
+          muted
+        ></video>
+        <img src="images/hero-image.png" alt="" />
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-content">
+        <h1>Wireless power bank</h1>
+        <p>
+          Our mission is providing people with the opportunity to charge your
+          devices at anytime, anywhere.
+        </p>
+        <a href="#!" class="btn" id="watch_video">Watch Video</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="section">
+        <div>
+          <h1 class="title">Are you tired of having an empty battery?</h1>
+          <p class="lead">We sure are.</p>
+        </div>
+
+        <img src="images/pb_usbInputs.svg" alt="" />
+        <p class="lead">
+          With this 5000mah power bank you can go through your day - stress
+          free.
+        </p>
+      </div>
+      <div class="section">
+        <h1 class="title">No need to worry about weight.</h1>
+        <img src="images/pb_disassemble.svg" alt="" />
+        <p class="lead">
+          With it's slim and compact design it's only 110 grams.
+        </p>
+      </div>
+      <div class="section">
+        <h1 class="title">Limited quantity.</h1>
+        <div id="two_images">
+          <img src="images/pb_frontBlack.svg" alt="" />
+          <img src="images/pb_frontWhite.svg" alt="" />
+        </div>
+
+        <p class="lead" id="productsLeft">
+          There are only 30 of our power banks left.
+        </p>
+      </div>
+      <div class="section-faq">
+        <h1 class="title">FAQ</h1>
+        <div class="question">
+          <div class="Q">What is it made of?</div>
+          <div class="A">ABS Plastic</div>
+        </div>
+        <div class="question">
+          <div class="Q">What are the dimensions?</div>
+          <div class="A">106x65x14.5mm</div>
+        </div>
+        <div class="question">
+          <div class="Q">Output interface?</div>
+          <div class="A">USB/DC</div>
+        </div>
+        <div class="question">
+          <div class="Q">Input interface?</div>
+          <div class="A">Micro USB, USB Type C</div>
+        </div>
+        <div class="question">
+          <div class="Q">Battery type?</div>
+          <div class="A">Li-Polymer battery</div>
+        </div>
+      </div>
+      <div class="section">
+        <h1 class="title">Have a burning question?</h1>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Enter your name..." />
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Enter your email..." />
+          <label for="title">Title</label>
+          <input type="text" name="title" placeholder="Enter the title..." />
+
+          <label for="subject">Subject</label>
+          <textarea
+            name="subject"
+            id="subject"
+            cols="30"
+            rows="10"
+            placeholder="Enter the subject..."
+          ></textarea>
+
+          <input type="submit" value="Send" class="btn" />
+        </form>
+        <p class="lead">
+          Be sure to contacts us and we will get back to you within 7 working
+          days.
+        </p>
+      </div>
+      <div class="section">
+        <h1 class="title">Who are we?</h1>
+        <img src="images/wholeTeam.svg" alt="" />
+        <p class="lead">
+          We are Charchu, a team of 7 individuals with a mission to bring future
+          tech to our customers.
+        </p>
+      </div>
+    </div>
+    <div class="section-team-wrap">
+      <div class="section-team">
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Lorenzo V/D Enden</h4>
+            <p class="member-role">Financial Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Lorenzo Van Den Enden - Financial Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Lina Lin</h4>
+            <p class="member-role">Marketing Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Lina Lin - Marketing Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Bas Huijgens</h4>
+            <p class="member-role">Creative Director</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Bas Huijens - Creative Director.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Arifa Umarella</h4>
+            <p class="member-role">Logistics Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Arifa Umarella - Logistics Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Niclas Doose</h4>
+            <p class="member-role">HR Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Niclas Doose - HR Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Hristo Boyanov</h4>
+            <p class="member-role">General Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Hristo Boyanov - General Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Mees Willems</h4>
+            <p class="member-role">Marketing Assistant</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Mees Willems - Marketing Assistant.svg"
+            alt=""
+          />
+        </div>
+        <!-- from here are the first 5 members copied -->
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Lorenzo V/D Enden</h4>
+            <p class="member-role">Financial Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Lorenzo Van Den Enden - Financial Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Lina Lin</h4>
+            <p class="member-role">Marketing Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Lina Lin - Marketing Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Bas Huijgens</h4>
+            <p class="member-role">Creative Director</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Bas Huijens - Creative Director.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Arifa Umarella</h4>
+            <p class="member-role">Logistics Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Arifa Umarella - Logistics Manager.svg"
+            alt=""
+          />
+        </div>
+        <div class="member">
+          <div class="member-info">
+            <h4 class="member-name">Niclas Doose</h4>
+            <p class="member-role">HR Manager</p>
+          </div>
+          <img
+            class="member-image"
+            src="images/Niclas Doose - HR Manager.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <img src="images/logo.svg" alt="" />
+        <p>© 2020 Copyright: charchu.com All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="javascript/showProductsLeft.js"></script>
+    <script src="javascript/calcWidthOfInfScroll.js"></script>
+    <script src="javascript/watchVideoBtn.js"></script>
+  </body>
+</html>

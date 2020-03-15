@@ -1,0 +1,361 @@
+:root {
+  --scroll-width: 0px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body,
+html {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden !important;
+  background-color: rgb(230, 230, 230);
+}
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullscreen-video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: none;
+}
+.fullscreen-video-wrap img {
+  /* display: inline; */
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #225470;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.header-content {
+  z-index: 2;
+}
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+.btn {
+  background: #34b3a0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.overlay {
+  height: 100vh;
+  display: none;
+  align-items: center;
+  color: #fff;
+}
+.overlay-video-wrap {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.overlay-video-wrap video {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section img {
+  max-width: 50%;
+  max-height: 50%;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.lead {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+#two_images > img:first-child {
+  margin-right: 10rem;
+  margin-bottom: 5rem;
+}
+#two_images img {
+  width: 30%;
+}
+.question {
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.Q,
+.A {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+}
+.Q {
+  font-weight: bold;
+  background-color: rgb(206, 206, 206);
+}
+.A {
+}
+.Q::before {
+  content: "Q.";
+  padding-right: 1rem;
+  font-size: 35px;
+}
+.A::before {
+  content: "A.";
+  font-weight: bold;
+  padding-right: 1rem;
+  font-size: 35px;
+}
+form {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+}
+form input {
+  border: 2px solid #ccc;
+  padding: 0.5rem 1rem;
+}
+form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+form .btn {
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.form-input {
+  width: 100%;
+}
+.left-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.left-form,
+.right-form {
+  width: 100%;
+}
+.subject-container {
+  display: flex;
+  flex-direction: column;
+}
+.section-team-wrap {
+  /* position: relative; */
+}
+.section-team {
+  /* position: absolute; */
+  display: flex;
+  /* overflow-x: show; */
+  overflow: visible;
+  -moz-animation: teamScroll 30s linear infinite;
+  -webkit-animation: teamScroll 30s linear infinite;
+  -o-animation: teamScroll 30s linear infinite;
+  animation: teamScroll 30s linear infinite;
+}
+
+.member {
+  z-index: 2;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 4rem;
+  justify-content: flex-end;
+}
+.member-name {
+  font-size: 25px;
+  margin-bottom: none;
+}
+.member-role {
+  margin-bottom: 1rem;
+}
+.member-image {
+  height: 400px;
+}
+footer {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: rgb(224, 224, 224);
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer img {
+  width: 10%;
+}
+@media (max-width: 960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer img {
+    width: 50%;
+  }
+}
+@media (max-width: 580px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer img {
+    width: 20%;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .header-content p {
+    font-size: 1.4rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+  .section img {
+    max-width: 90%;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .lead {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  #two_images > img:first-child {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .question {
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .Q,
+  .A {
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+  }
+  .Q {
+    font-weight: bold;
+    background-color: rgb(206, 206, 206);
+  }
+  .A {
+  }
+  .Q::before {
+    content: "Q.";
+    padding-right: 1rem;
+    font-size: 20px;
+  }
+  .A::before {
+    content: "A.";
+    font-weight: bold;
+    padding-right: 1rem;
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .fullscreen-video-wrap video {
+    display: inline;
+  }
+  .fullscreen-video-wrap img {
+    display: none;
+  }
+}
