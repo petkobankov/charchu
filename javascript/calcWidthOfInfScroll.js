@@ -7,9 +7,7 @@ for (let i = 0; i < children.length; i++) {
   let style = member.currentStyle || window.getComputedStyle(member);
 
   sectionTeamWidth +=
-    parseInt(style.marginLeft) +
-    parseInt(style.marginRight) +
-    parseInt(style.width);
+    parseInt(style.marginLeft) + parseInt(style.marginRight) + 225;
 }
 console.log(sectionTeamWidth);
 sectionTeamWidth =
