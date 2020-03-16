@@ -266,6 +266,19 @@ footer .container {
 footer img {
   width: 10%;
 }
+#tos a:visited {
+  color: blue;
+}
+#tos {
+  background-color: rgba(219, 219, 219, 0.562);
+  z-index: 20;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+}
 @media (max-width: 960px) {
   .container {
     padding-right: 3rem;
