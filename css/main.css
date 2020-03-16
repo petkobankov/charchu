@@ -266,8 +266,14 @@ footer .container {
 footer img {
   width: 10%;
 }
+#tos #close i {
+  color: #000;
+}
 #tos a:visited {
   color: blue;
+}
+#tos div {
+  margin: auto;
 }
 #tos {
   background-color: rgba(219, 219, 219, 0.562);
@@ -278,6 +284,8 @@ footer img {
   right: 0;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 960px) {
   .container {
