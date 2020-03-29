@@ -1,4 +1,5 @@
 .pace {
+  transition: all 2s;
   -webkit-pointer-events: none;
   pointer-events: none;
 
