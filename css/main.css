@@ -10,6 +10,19 @@ html {
   width: 100%;
   overflow-x: hidden !important;
 }
+#loading-scren {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #9cc4db;
+  z-index: 88;
+  transition: all 1s;
+}
+#loading-scren.done {
+  display: none;
+}
 #recaptcha {
   align-self: center;
   margin-top: 1rem;
