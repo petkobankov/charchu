@@ -43,7 +43,7 @@ let update = function () {
   if (visibleY(sceneTwo)) {
     if (btnPress && !visibleY(sceneOne)) {
       console.log("pause video");
-      btnPress.pauseVideo();
+      player.pauseVideo();
     }
     bg2.style.opacity = "1";
   } else {
