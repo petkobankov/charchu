@@ -119,25 +119,40 @@
       <div class="scene three">
         <div class="purchase-scene container" id="purchase">
           <h1 class="title">Purchase</h1>
-          <form name="purchase" method="POST" data-netlify="true">
+          <form
+            name="purchase"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
             <div class="form-group">
               <label for="name1">Name</label>
               <input
-                type="email"
+                type="name"
+                name="name"
                 class="form-control"
                 id="name1"
-                aria-describedby="emailHelp"
+                aria-describedby="name"
                 placeholder="Enter name"
+                required
               />
             </div>
             <div class="form-group">
               <label for="email1">Email address</label>
               <input
+                name="email"
                 type="email"
                 class="form-control"
                 id="email1"
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
+                required
               />
               <small id="emailHelp" class="form-text text-muted"
                 >We'll never share your email with anyone else.</small
@@ -153,6 +168,7 @@
             <div class="form-group">
               <label for="amount">Amount</label>
               <input
+                name="amount"
                 type="number"
                 class="form-control"
                 id="amount"
@@ -160,12 +176,13 @@
                 placeholder="Enter amount"
                 min="1"
                 max="30"
+                required
               />
               <small id="emailHelp" class="form-text text-danger"
                 >Note: Due to covid-19.... ico kaji kakvo da pishe tuk</small
               >
             </div>
-            <div id="recaptcha" data-netlify-recaptcha="true"></div>
+            <div class="recaptcha" data-netlify-recaptcha="true"></div>
             <input type="submit" value="reserve amount" class="btn" />
           </form>
         </div>
@@ -194,7 +211,18 @@
         </div>
         <div class="support container" id="support">
           <h1 class="title">Have a burning question?</h1>
-          <form name="contact" method="POST" data-netlify="true">
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
             <div class="form-group">
               <label for="name">Name</label>
               <input
@@ -202,6 +230,7 @@
                 type="text"
                 name="name"
                 placeholder="Enter your name..."
+                required
               />
             </div>
             <div class="form-group">
@@ -211,6 +240,7 @@
                 type="email"
                 name="email"
                 placeholder="Enter your email..."
+                required
               />
             </div>
             <div class="form-group">
@@ -220,6 +250,7 @@
                 type="text"
                 name="title"
                 placeholder="Enter the title..."
+                required
               />
             </div>
             <div class="form-group">
@@ -231,9 +262,10 @@
                 cols="30"
                 rows="3"
                 placeholder="Enter the subject..."
+                required
               ></textarea>
             </div>
-            <div id="recaptcha" data-netlify-recaptcha="true"></div>
+            <div class="recaptcha" data-netlify-recaptcha="true"></div>
             <input type="submit" value="Send" class="btn" />
           </form>
           <p class="lead">
