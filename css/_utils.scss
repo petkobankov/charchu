@@ -4,6 +4,9 @@
   font-size: $fontSize2;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.hidden {
+  visibility: hidden;
+}
 #player {
   display: none;
 }
