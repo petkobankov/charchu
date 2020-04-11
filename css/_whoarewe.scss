@@ -1,0 +1,21 @@
+#whoarewe {
+  padding-top: 5rem;
+  img {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
+#carouselExampleIndicators {
+  padding-top: 5rem;
+  // height: 60vh;
+  img {
+    height: 60vh;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+  p {
+    font-size: $fontSize3;
+    font-weight: 300;
+  }
+}

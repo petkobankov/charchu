@@ -1,0 +1,42 @@
+.section-faq {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.question {
+  font-size: $fontSize2;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  background: $white;
+  box-shadow: 5px 5px 15px rgba($rose, 0.1);
+  border-radius: 10px;
+}
+.Q,
+.A {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+.Q {
+  border-radius: 10px;
+  font-weight: normal;
+  background-color: darken($white, 5%);
+}
+.A {
+}
+.Q::before {
+  content: "Q.";
+  font-weight: bold;
+  padding-right: 1rem;
+  font-size: $fontSize2;
+}
+.A::before {
+  content: "A.";
+  font-weight: bold;
+  padding-right: 1rem;
+  font-size: $fontSize2;
+}

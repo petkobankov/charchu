@@ -1,0 +1,48 @@
+#support {
+  padding-top: 5rem;
+}
+form {
+  font-size: $fontSize2;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  input {
+    border: 2px solid $white;
+    padding: 0.5rem 1rem;
+    font-size: $fontSize2;
+    border-radius: 10px;
+  }
+  textarea {
+    font-size: $fontSize2;
+    width: 100%;
+    height: 150px;
+    padding: 12px $fontSize2;
+    box-sizing: border-box;
+    border: 2px solid $white;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: vertical;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+}
+
+// .form-input {
+//   width: 100%;
+// }
+// .left-form {
+//   display: flex;
+//   flex-direction: column;
+//   margin-right: 2rem;
+// }
+// .left-form,
+// .right-form {
+//   width: 100%;
+// }
+// .subject-container {
+//   display: flex;
+//   flex-direction: column;
+// }
