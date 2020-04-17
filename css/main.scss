@@ -10,81 +10,108 @@
 @import "whoarewe";
 @import "footer";
 /* RESPONSIVNESS */
-@media (max-width: 960px) {
-}
-@media (max-width: 400px) {
-}
-@media (max-width: 580px) {
-  #header-btns {
-    display: flex;
+@media (max-width: 640px) {
+  .btn {
+    font-size: $fontSize3;
+    padding: 0.5rem 1rem;
+  }
+  .header-content {
+    #header-btns {
+      .btn {
+        width: 80%;
+        margin-left: 0;
+        &.hallow {
+          margin-top: 1rem;
+          width: 70%;
+        }
+      }
+    }
+    h1 {
+      font-size: $fontSize2;
+    }
+    p {
+      font-size: $fontSize3;
+    }
+  }
+  .charchu-content {
+    height: 100%;
+  }
+  .charchu-sub-content {
+    width: 100vw;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 4rem;
     flex-flow: column;
-    align-items: center;
-    .btn {
-      width: 80%;
+    h1,
+    h2 {
+      font-size: $fontSize3;
+    }
+    img {
+      height: 50%;
+    }
+    .product {
+      margin-top: 1rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
       margin-left: 0;
-      &.hallow {
-        margin-top: 1rem;
-        width: 70%;
+      width: 100%;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      font-size: $fontSize3;
+      &.watch_video {
+        display: none;
       }
     }
   }
-}
-/* Extra small devices (phones, 600px and down) */
-@media (max-width: 500px) {
-  .charchu-btns {
-    .buy_now {
-      display: none;
+  .title {
+    font-size: $fontSize2;
+  }
+  form {
+    font-size: $fontSize3;
+    label,
+    input,
+    textarea,
+    small,
+    select {
+      font-size: $fontSize3 !important;
     }
   }
-  .charchu-sub-content {
-    img {
-      align-self: center;
-      height: 200px;
-    }
-    .product {
-      margin-left: 10px;
+  .section-faq {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .question {
+    .Q,
+    .A,
+    .Q::before,
+    .A::before {
+      font-size: $fontSize3;
     }
   }
-}
-@media (max-width: 600px) {
-  .charchu-sub-content {
-    .product {
-      margin-left: 10px;
-    }
+  .lead {
+    font-size: $fontSize3;
   }
   #whoarewe {
+    padding-top: 5rem;
     img {
       width: 100%;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media (max-width: 900px) {
-  // #whoarewe {
-  //   img {
-  //     width: 60%;
-  //   }
-  // }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (max-width: 768px) {
-  /* Large devices (laptops/desktops, 992px and up) */
-  .charchu-btns {
-    .watch_video {
-      display: none;
+@media (min-width: 640px) and (max-width: 738px) {
+  .charchu-sub-content {
+    .btn {
+      &.watch_video {
+        display: none;
+      }
     }
-  }
-}
-@media (min-width: 900px) {
-  .charchu-sub-content {
-    width: 70vw;
-  }
-}
-@media (min-width: 1290px) {
-  .charchu-sub-content {
-    width: 50vw;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

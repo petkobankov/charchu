@@ -38,9 +38,11 @@
   }
   img {
     height: 100%;
+    align-self: center;
   }
   h2 {
     color: $tan;
+    font-size: $fontSize2;
   }
   .product {
     display: flex;
@@ -54,7 +56,7 @@
     letter-spacing: 0;
     margin-bottom: 17px;
     color: $dark;
-    font-size: $fontSize2;
+    font-size: $fontSize3;
     line-height: 1.6em;
     text-align: justify;
   }
@@ -65,5 +67,7 @@
   }
   .btn {
     display: inline-block;
+    padding: 1rem 1rem;
+    font-size: $fontSize2;
   }
 }

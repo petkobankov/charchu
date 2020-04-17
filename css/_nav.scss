@@ -2,4 +2,8 @@ nav {
   position: sticky !important;
   top: 0;
   z-index: 3;
+
+  a {
+    font-size: $fontSize3;
+  }
 }
