@@ -4,11 +4,21 @@
 }
 footer {
   color: #000;
-  display: flex;
+  // display: flex;
   margin-top: auto;
+
+  width: 100%;
+  font-size: $fontSize3;
+  a {
+    color: $second;
+    font-size: $fontSize3;
+  }
+}
+
+.foot {
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   font-size: $fontSize3;
   a {
     color: $second;
